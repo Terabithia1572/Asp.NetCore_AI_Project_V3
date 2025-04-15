@@ -19,7 +19,7 @@ class Program
             client.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}"); // OpenAI API anahtarını ekliyoruz
             var requestBody = new // JSON nesnesi oluşturuyoruz
             {
-                model = "gpt-3.5-turbo", // OpenAI modelini belirtiyoruz
+                model = "gpt-3.5-turbo", // OpenAI modelini belirtiyoruz 
                 messages = new[] // JSON mesajları dizisi oluşturuyoruz
                 {
 
