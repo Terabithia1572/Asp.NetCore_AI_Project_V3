@@ -33,18 +33,18 @@ class Program
                                                                                           //   var response = await client.PostAsync("https://api.openai.com/v1/chat/completions", content); // API isteği gönderiyoruz
             try
             {
-                HttpResponseMessage response = await client.PostAsync("https://api.openai.com/v1/chat/completions", content);
-                string responseString = await response.Content.ReadAsStringAsync();
+                HttpResponseMessage response = await client.PostAsync("https://api.openai.com/v1/chat/completions", content); // API isteği gönderiyoruz
+                string responseString = await response.Content.ReadAsStringAsync(); // Yanıtı okuyoruz
 
-                dynamic responseObject = JsonConvert.DeserializeObject(responseString);
-                string translation = responseObject.choices[0].message.content;
+                dynamic responseObject = JsonConvert.DeserializeObject(responseString); // JSON yanıtını dinamik bir nesneye dönüştürüyoruz
+                string translation = responseObject.choices[0].message.content; // Çeviriyi alıyoruz
 
-                return translation;
+                return translation; // Çeviriyi döndürüyoruz
             }
-            catch (Exception ex)
+            catch (Exception ex) // Hata yakalama bloğu
             {
-                Console.WriteLine($"Bir hata oluştu: {ex.Message}");
-                return null;
+                Console.WriteLine($"Bir hata oluştu: {ex.Message}"); // Hata mesajını yazdırıyoruz
+                return null; // Hata durumunda null döndürüyoruz
             }
         }
     }
