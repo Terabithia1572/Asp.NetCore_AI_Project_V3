@@ -28,6 +28,7 @@ class Program
                model="tts-1", // OpenAI modelini belirtiyoruz
                 input =text, // Kullanıcıdan alınan metni seslendirmek için kullanıyoruz
                 voice = "alloy" // Seslendirme için kullanılacak sesi belirtiyoruz
+                //alloy ses tonudur farklı ses tonları da deneyebiliriz
             };
             string jsonBody = JsonConvert.SerializeObject(requestBody); // JSON nesnesini serileştiriyoruz
             HttpContent content = new StringContent(jsonBody, Encoding.UTF8, "application/json"); // JSON içeriğini oluşturuyoruz
