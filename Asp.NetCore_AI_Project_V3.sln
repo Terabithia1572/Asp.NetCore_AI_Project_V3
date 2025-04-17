@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_09_O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_10_TextToSpeech", "Asp.NetCore_AI_Project_10_TextToSpeech\Asp.NetCore_AI_Project_10_TextToSpeech.csproj", "{D1411832-947B-4342-BC82-67E23E0CC998}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_11_TextToSpeechWithOpenAI", "Asp.NetCore_AI_Project_11_TextToSpeechWithOpenAI\Asp.NetCore_AI_Project_11_TextToSpeechWithOpenAI.csproj", "{66751EA0-E0CE-480B-BB99-6C5525EF73DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D1411832-947B-4342-BC82-67E23E0CC998}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1411832-947B-4342-BC82-67E23E0CC998}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1411832-947B-4342-BC82-67E23E0CC998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66751EA0-E0CE-480B-BB99-6C5525EF73DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66751EA0-E0CE-480B-BB99-6C5525EF73DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66751EA0-E0CE-480B-BB99-6C5525EF73DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66751EA0-E0CE-480B-BB99-6C5525EF73DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
