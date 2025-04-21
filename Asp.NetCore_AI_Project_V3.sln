@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_10_T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_11_TextToSpeechWithOpenAI", "Asp.NetCore_AI_Project_11_TextToSpeechWithOpenAI\Asp.NetCore_AI_Project_11_TextToSpeechWithOpenAI.csproj", "{66751EA0-E0CE-480B-BB99-6C5525EF73DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_12_SentimentAIApp", "Asp.NetCore_AI_Project_12_SentimentAIApp\Asp.NetCore_AI_Project_12_SentimentAIApp.csproj", "{35502CFA-C165-46A0-9E04-EF47242BBF1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{66751EA0-E0CE-480B-BB99-6C5525EF73DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66751EA0-E0CE-480B-BB99-6C5525EF73DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66751EA0-E0CE-480B-BB99-6C5525EF73DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35502CFA-C165-46A0-9E04-EF47242BBF1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35502CFA-C165-46A0-9E04-EF47242BBF1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35502CFA-C165-46A0-9E04-EF47242BBF1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35502CFA-C165-46A0-9E04-EF47242BBF1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
