@@ -6,22 +6,22 @@ class Program
     private static readonly string apiKey = "";
     static async Task Main(string[] args)
     {
-        Console.Write("Lütfen bir metin giriniz: ");
-        string inputText = Console.ReadLine();
-        if (!string.IsNullOrEmpty(inputText))
+        Console.Write("Lütfen bir metin giriniz: "); // Kullanıcıdan metin girişi istenir
+        string inputText = Console.ReadLine(); // Kullanıcıdan metin alınır
+        if (!string.IsNullOrEmpty(inputText)) 
         {
-            Console.WriteLine();
-            Console.WriteLine("Metin Duygu analizi yapılıyor...");
-            Console.WriteLine();
-            string sentiment = "buraya method gelecek";
-            Console.WriteLine($"Metin Duygu analizi sonucu: {sentiment}");
+            Console.WriteLine(); // Boşluk bırakılır
+            Console.WriteLine("Metin Duygu analizi yapılıyor..."); // Kullanıcıya bilgi verilir
+            Console.WriteLine(); // Boşluk bırakılır
+            string sentiment = await AnalyzeSentiment(inputText); //Metin duygu analizi yapılır
+            Console.WriteLine($"Metin Duygu analizi sonucu: {sentiment}"); // // Sonuç yazdırılır
         }
         else
         {
-            Console.WriteLine("Lütfen geçerli bir metin giriniz.");
+            Console.WriteLine("Lütfen geçerli bir metin giriniz."); // Kullanıcıdan geçerli bir metin girmesi istenir
         }
     }
-    static async Task<string> AnalyzeSentiment(string text)
+    static async Task<string> AnalyzeSentiment(string text) // Metin duygu analizi yapan metod
     {
         using (HttpClient client = new HttpClient()) // HttpClient nesnesi oluşturulur
         {
